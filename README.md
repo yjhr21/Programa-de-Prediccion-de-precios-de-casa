@@ -1,5 +1,5 @@
-# Programa-de-Prediccion-de-precios-de-casa
-Práctica 4: Revisión de Código
+#Programa-de-Prediccion-de-precios-de-casa
+#Práctica 4: Revisión de Código
 El módulo que se está evaluando es realizar_predicción(), que proviene de un proyecto en python
  
 VENTANA 3
@@ -62,7 +62,7 @@ VENTANA 5
 CASO 1
 
 Fragmento de código:
-# Dividir el conjunto de datos en entrenamiento y prueba
+ Dividir el conjunto de datos en entrenamiento y prueba
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 
@@ -73,7 +73,7 @@ Rename this local variable "X_test" to match the regular expression ^[_a-z][a-z0
 La regla sonarlint(python:S117) sugiere renombrar variables locales para que sigan la convención de nombres en minúscula y guiones bajos, es decir, deben coincidir con la expresión regular ^[_a-z][a-z0-9_]*$. En este caso, X_test no sigue esa convención, ya que empieza con una letra mayúscula. Las variables locales deben tener nombres en minúscula para mantener la coherencia en el código y seguir las buenas prácticas de nomenclatura.
 
 Refactorización:
- # Dividir el conjunto de datos en entrenamiento y prueba
+ Dividir el conjunto de datos en entrenamiento y prueba
         x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 Renombrar las variables para que sigan las convenciones de nombres en minúscula.
